@@ -300,12 +300,17 @@ main .main-content {
 
 /* Sidebar Styling */
 main .sidebar {
-  width: 250px;
+  width: 0px;
   background-color: var(--white-color);
   padding: 20px 10px;
   height: calc(100vh - 80px);
   overflow-y: auto;
   scrollbar-width: thin;
+  transition: width 0.3s ease-in-out;
+}
+
+main .visible {
+  width: 250px;
 }
 
 .sidebar .sidebar-top {
