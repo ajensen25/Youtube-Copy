@@ -1,0 +1,58 @@
+export const videos = [
+  {
+    thumbnail: 'https://i.ytimg.com/vi/OORUHkgg4IM/maxresdefault.jpg',
+    channel: 'CodingNepal',
+    channelLogo: 'assets/logo.png',
+    title: 'Top 10 Easy To Create JavaScript Games For Beginners',
+    views: '27k views',
+    release: '4 months ago',
+    duration: '10:03',
+  },
+  {
+    thumbnail: 'https://i.ytimg.com/vi/qOO6lVMhmGc/maxresdefault.jpg',
+    channel: 'CodingLab',
+    channelLogo: 'assets/logo.png',
+    title: 'How to make Responsive Card Slider in HTML CSS & JavaScript',
+    views: '42k views',
+    release: '1 year ago',
+    duration: '23:45',
+  },
+  {
+    thumbnail: 'https://i.ytimg.com/vi/YEloDYy3DTg/maxresdefault.jpg',
+    channel: 'CodingNepal',
+    channelLogo: 'assets/logo.png',
+    title: 'Create A Responsive Website with Login & Registration Form in HTML CSS and JavaScript',
+    views: '68k views',
+    release: '9 months ago',
+    duration: '29:43',
+  },
+  {
+    thumbnail: 'https://i.ytimg.com/vi/hSSdc8vKP1I/maxresdefault.jpg',
+    channel: 'CodingNepal',
+    channelLogo: 'assets/logo.png',
+    title: 'Build Hangman Game in HTML CSS and JavaScript',
+    views: '57k views',
+    release: '11 months ago',
+    duration: '38:45',
+  },
+  {
+    thumbnail: 'https://i.ytimg.com/vi/6QE8dXq9SOE/maxresdefault.jpg',
+    channel: 'CodingNepal',
+    channelLogo: 'assets/logo.png',
+    title: 'Create A Draggable Card Slider in HTML CSS and Vanilla JavaScript',
+    views: '14.2k views',
+    release: '4 days ago',
+    duration: '16:24',
+  },
+  {
+    thumbnail: 'https://i.ytimg.com/vi/coj-l7IrwGU/maxresdefault.jpg',
+    channel: 'CodingNepal',
+    channelLogo: 'assets/logo.png',
+    title: 'How to Make Chrome Extension in HTML CSS & JavaScript',
+    views: '24k views',
+    release: '1 year ago',
+    duration: '19:27',
+  },
+];
+
+export default videos;
