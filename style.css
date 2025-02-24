@@ -13,17 +13,15 @@
   --black-color: #000;
   --light-white-color: #f0f0f0;
   --light-grey-color: #e5e5e5;
+  --grey-color: grey;
   --border-color: #d4d4d4;
   --primary-color: #3b82f6;
   --secondary-color: #404040;
-  --overlay-dark-color: rgba(0 0 0 0.6);
+  --overlay-dark-color: rgba(0, 0, 0, 0.6);
 }
 
 /* Header / Navbar Styling */
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
 }
 
@@ -107,7 +105,7 @@ header .navbar {
 
 .navbar-mid .searchbar button {
   height: 40px;
-  width: 50px;
+  width: 60px;
   background: none;
   border: 1px solid var(--border-color);
   border-left: 0;
@@ -124,7 +122,7 @@ header .navbar {
 .navbar-mid .voice-search {
   height: 40px;
   width: 40px;
-  background: var(--light-white-color);
+  background: var(--light-grey-color);
   border: none;
   border-radius: 3.1rem;
   cursor: pointer;
@@ -133,7 +131,7 @@ header .navbar {
 }
 
 .navbar-mid .voice-search:hover {
-  background: var(--light-grey-color);
+  background: var(--light-white-color);
 }
 
 /* Navbar Right Styling */ 
@@ -180,4 +178,118 @@ header .navbar {
   background-position: center;
   background-size: cover;
   border-radius: 3.1rem;
+}
+
+
+/* Main Content Styling */
+main {
+  display: flex;
+}
+
+main .main-content {
+  padding: 0 16px;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Category List Styling */
+.main-content .category-list {
+  display: flex;
+  gap: 12px;
+  padding: 12px 0 10px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.category-list .category-button {
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 400;
+  background: var(--light-grey-color);
+  padding: 6px 12px;
+  white-space: nowrap;
+}
+
+.category-list .selected-category {
+  background: var(--black-color);
+  color: var(--white-color);
+}
+
+/* Video Grid Styling */
+.main-content .videos-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  padding-top: 20px;
+}
+
+.videos-grid .video-cell {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.video-cell .thumbnail {
+  position: relative;
+}
+
+.video-cell .thumbnail img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.video-cell .thumbnail .video-duration {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 0.75rem;
+  background: var(--overlay-dark-color);
+  z-index: 5;
+  color: var(--white-color);
+  border-radius: 0.25rem;
+  padding: 2px 5px;
+}
+
+.video-cell .video-info {
+  display: flex;
+  padding: 8px;
+  gap: 10px;
+}
+
+.video-info .profile-picture {
+  cursor: pointer;
+}
+
+.video-info .profile-picture img {
+  height: 35px;
+  width: 35px;
+}
+
+.video-info .info-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2px 0;
+}
+
+.info-container h4 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding-bottom: 3px;
+  color: var(--black-color);
+  line-clamp: 2;
+}
+
+.info-container p {
+  color: var(--grey-color);
+  font-size: 0.75rem;
+  line-clamp: 1;
+}
+
+/* Sidebar Styling */
+main .sidebar {
+  width: 250px;
 }
